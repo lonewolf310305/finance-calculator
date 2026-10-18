@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Finance Calculator – 16-in-1 Financial Toolkit for Android | RR Production</title>
+  <meta name="title" content="Finance Calculator – 16-in-1 Financial Toolkit for Android | RR Production">
+  <meta name="description" content="Finance Calculator by RR Production: 16 powerful financial calculators in one free offline Android app. EMI, SIP, FD, RD, Compound Interest, Chit Fund, GST, Loan Prepayment & more. 100% private, no internet needed.">
+  <meta name="keywords" content="Finance Calculator, EMI Calculator, SIP Calculator, FD Calculator, RD Calculator, Compound Interest, Chit Fund, GST Calculator, Loan Prepayment, Simple Interest, Indian Finance App, RR Production, Nikil Ravi">
+  <meta name="author" content="Nikil Ravi / RR Production">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B0F19">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator">
+  <meta property="og:title" content="Finance Calculator – 16-in-1 Financial Toolkit | RR Production">
+  <meta property="og:description" content="16 essential financial calculators: EMI, SIP, FD, RD, Chit Fund, GST, Loan Prepayment & more. 100% free, offline & private Android app.">
+  <meta property="og:image" content="assets/screenshots/app-home.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Finance Calculator – 16-in-1 Financial Toolkit">
+  <meta name="twitter:description" content="16 essential financial calculators. Free, offline, private Android app by RR Production.">
+  <meta name="twitter:image" content="assets/screenshots/app-home.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Finance Calculator",
+    "operatingSystem": "Android",
+    "applicationCategory": "FinanceApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+    "author": { "@type": "Organization", "name": "RR Production" },
+    "description": "16-in-1 financial calculator app for Android. EMI, SIP, FD, RD, Compound Interest, Chit Fund, GST, Prepayment and more.",
+    "url": "https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/screenshot-showcase.css">
+
+  <!-- Theme: prevent FOUC -->
+  <script>
+    (function() {
+      const s = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', (s === 'light' || s === 'dark') ? s : 'dark');
+    })();
+  </script>
+</head>
+<body>
+
+<!-- =====================================================================
+     STICKY NAVIGATION BAR
+     ===================================================================== -->
+<header class="navbar" role="banner">
+  <div class="nav-container container">
+
+    <!-- Brand -->
+    <a href="#hero" class="brand" aria-label="Finance Calculator by RR Production">
+      <img src="assets/logo.png" alt="Finance Calculator Logo" class="brand-logo" width="36" height="36">
+      <div class="brand-text">
+        <span class="brand-title">Finance Calculator</span>
+        <span class="brand-subtitle">by RR Production</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav aria-label="Primary Navigation">
+      <ul class="nav-menu">
+        <li><a href="#calculators" class="nav-link">Calculators</a></li>
+        <li><a href="#features"    class="nav-link">Features</a></li>
+        <li><a href="#showcase"    class="nav-link">Screenshots</a></li>
+        <li><a href="#faq"         class="nav-link">FAQ</a></li>
+        <li><a href="privacy-policy.html" class="nav-link">Privacy</a></li>
+      </ul>
+    </nav>
+
+    <!-- Actions -->
+    <div class="nav-actions">
+      <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+         class="btn-download-nav" target="_blank" rel="noopener noreferrer" aria-label="Get on Google Play">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3.609 1.814L13.792 12 3.61 22.186a2.31 2.31 0 0 1-.22-.984V2.798c0-.368.08-.71.22-.984zm11.24 11.24l2.128 2.128-11.83 6.76 9.702-8.888zm0-2.108L5.147 2.058l11.83 6.76-2.128 2.128zm1.465 1.054l3.076 1.758a1.282 1.282 0 0 1 0 2.228l-3.076 1.758-2.22-2.22 2.22-1.524z"/>
+        </svg>
+        Download Free
+      </a>
+
+      <!-- Hamburger -->
+      <button id="hamburgerBtn" class="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileNav" class="mobile-nav" role="navigation" aria-label="Mobile Navigation">
+    <div class="mobile-nav-inner">
+      <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Theme Mode</span>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+      <a href="#calculators"      class="mobile-nav-link">Calculators</a>
+      <a href="#features"         class="mobile-nav-link">Features</a>
+      <a href="#showcase"         class="mobile-nav-link">Screenshots</a>
+      <a href="#faq"              class="mobile-nav-link">FAQ</a>
+      <a href="privacy-policy.html" class="mobile-nav-link">Privacy Policy</a>
+      <a href="terms.html"          class="mobile-nav-link">Terms &amp; Conditions</a>
+      <a href="disclaimer.html"     class="mobile-nav-link">Disclaimer</a>
+      <a href="contact.html"        class="mobile-nav-link">Contact Us</a>
+      <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+         class="btn-primary mobile-cta" target="_blank" rel="noopener noreferrer">
+        Get on Google Play
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- =====================================================================
+     HERO SECTION
+     ===================================================================== -->
+<section id="hero" class="hero">
+  <div class="container hero-grid">
+
+    <!-- Left: Content -->
+    <div class="hero-content">
+      <div class="hero-badge fade-in-up">
+        <span>⚡</span>
+        <span>16-in-1 Financial Powerhouse</span>
+      </div>
+
+      <h1 class="hero-title fade-in-up">
+        Master Your Money with<br><span class="gradient-text">Smart, Accurate</span> Calculations
+      </h1>
+
+      <p class="hero-subtitle fade-in-up">
+        From daily vaddi &amp; loan EMIs to SIPs and traditional Chit funds — get instant, accurate
+        results with zero ads, 100% offline privacy, and Indian Lakhs &amp; Crores formatting.
+      </p>
+
+      <div class="hero-actions fade-in-up">
+        <!-- Official Google Play Badge -->
+        <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+           class="play-badge-link" target="_blank" rel="noopener noreferrer"
+           aria-label="Get Finance Calculator on Google Play">
+          <img src="assets/google-play-badge.svg" alt="Get it on Google Play" class="play-badge-img">
+        </a>
+        <a href="#showcase" class="btn-secondary">See App Screenshots ↓</a>
+      </div>
+
+      <!-- Trust Bar -->
+      <div class="trust-bar fade-in-up">
+        <div class="trust-item">
+          <span class="trust-dot" style="background:#2563EB;"></span>
+          <span>16 Calculators</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-dot" style="background:#059669;"></span>
+          <span>100% Free &amp; Offline</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-dot" style="background:#7C3AED;"></span>
+          <span>WhatsApp Share</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-dot" style="background:#D97706;"></span>
+          <span>Privacy First</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-dot" style="background:#EC4899;"></span>
+          <span>Zero Ads</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Real App Screenshot in Phone Frame (interactive scrollable screen) -->
+    <div class="mockup-wrapper">
+      <div class="mockup-glow"></div>
+      <div class="hero-phone-frame">
+        <!-- Phone Speaker & Camera Notch Bar -->
+        <div class="phone-notch-bar">
+          <div class="phone-speaker"></div>
+          <div class="phone-camera-lens"></div>
+        </div>
+        <!-- Scrollable Screen Area -->
+        <div class="hero-phone-viewport" tabindex="0" role="region" aria-label="Interactive scrollable Finance Calculator screen">
+          <img src="assets/screenshots/home_dark.jpeg"
+               data-dark-src="assets/screenshots/home_dark.jpeg"
+               data-light-src="assets/screenshots/home_light.jpeg"
+               alt="Finance Calculator app home screen showing all 16 calculators"
+               class="hero-screenshot themed-img"
+               loading="eager">
+        </div>
+        <!-- Scroll Prompt Hint Overlay -->
+        <div class="phone-scroll-hint">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          <span>Scrollable</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =====================================================================
+     16 CALCULATORS SECTION
+     ===================================================================== -->
+<section id="calculators" class="calculators-section">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-tag">Complete Suite</span>
+      <h2 class="section-title">All 16 Financial Calculators</h2>
+      <p class="section-subtitle">Every calculator purpose-built for Indian users — with ₹ Lakhs &amp; Crores formatting, quick rate presets, and instant share.</p>
+    </div>
+
+    <!-- Category 1: Investment Calculators -->
+    <div class="category-block stagger-children">
+      <div class="category-header">
+        <span class="category-dot" style="background:#2563EB;"></span>
+        <span class="category-name">Investment Calculators</span>
+        <span class="category-count">6 Tools</span>
+      </div>
+      <div class="calc-grid">
+        <!-- 01: Simple Interest -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">01</div>
+          <div class="calc-icon-wrap app-icon-si">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+              <line x1="8" y1="8" x2="10" y2="8"></line><line x1="9" y1="7" x2="9" y2="9"></line>
+              <line x1="14" y1="8" x2="16" y2="8"></line>
+              <line x1="8" y1="14" x2="10" y2="16"></line><line x1="10" y1="14" x2="8" y2="16"></line>
+              <line x1="14" y1="14.5" x2="16" y2="14.5"></line><line x1="14" y1="16.5" x2="16" y2="16.5"></line>
+            </svg>
+          </div>
+          <h3 class="calc-title">Simple Interest</h3>
+          <p class="calc-desc">Indian vaddi/lending precision — exact from-to calendar dates, per-month &amp; per-year rate toggle, daily accrual, and 30-day month standard.</p>
+        </div>
+
+        <!-- 02: Compound Interest -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">02</div>
+          <div class="calc-icon-wrap app-icon-ci">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="6" y1="18" x2="6" y2="12"></line>
+              <line x1="12" y1="18" x2="12" y2="8"></line>
+              <line x1="18" y1="18" x2="18" y2="4"></line>
+              <polyline points="10 8 18 4 18 10"></polyline>
+            </svg>
+          </div>
+          <h3 class="calc-title">Compound Interest</h3>
+          <p class="calc-desc">5 compounding frequencies: Annually, Half-Yearly, Quarterly, Monthly, or Daily. Shows AER effective annual rates for true comparison.</p>
+        </div>
+
+        <!-- 03: Chit Calculator -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">03</div>
+          <div class="calc-icon-wrap app-icon-chit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="calc-title">Chit Calculator</h3>
+          <p class="calc-desc">Traditional auction chit manager — member dividend, net winner cash, agent commission %, and effective interest rate per member.</p>
+        </div>
+
+        <!-- 04: Fixed Deposit -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">04</div>
+          <div class="calc-icon-wrap app-icon-fd">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="16" rx="3"></rect>
+              <circle cx="12" cy="12" r="3.5"></circle>
+              <line x1="12" y1="12" x2="13.5" y2="12"></line>
+            </svg>
+          </div>
+          <h3 class="calc-title">Fixed Deposit (FD)</h3>
+          <p class="calc-desc">Forecast bank FD maturity values with compounding options. Quick preset chips for SBI, HDFC, ICICI, and Axis Bank rates.</p>
+        </div>
+
+        <!-- 05: Recurring Deposit -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">05</div>
+          <div class="calc-icon-wrap app-icon-rd">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="5" width="20" height="14" rx="3"></rect>
+              <line x1="2" y1="10" x2="22" y2="10"></line>
+              <circle cx="16" cy="14" r="1.5" fill="currentColor"></circle>
+            </svg>
+          </div>
+          <h3 class="calc-title">Recurring Deposit (RD)</h3>
+          <p class="calc-desc">Grow disciplined monthly savings with clear maturity interest breakdowns and cumulative payout projections over time.</p>
+        </div>
+
+        <!-- 06: Interest Rate Finder -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">06</div>
+          <div class="calc-icon-wrap app-icon-finder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16" y2="16"></line>
+              <line x1="11" y1="8" x2="11" y2="14"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+          </div>
+          <h3 class="calc-title">Interest Rate Finder</h3>
+          <p class="calc-desc">Reverse calculator — input principal and total return to discover the exact effective rate per month and per day.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 2: Loan Calculators -->
+    <div class="category-block stagger-children">
+      <div class="category-header">
+        <span class="category-dot" style="background:#EF4444;"></span>
+        <span class="category-name">Loan Calculators</span>
+        <span class="category-count">4 Tools</span>
+      </div>
+      <div class="calc-grid">
+        <!-- 07: EMI Calculator -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">07</div>
+          <div class="calc-icon-wrap app-icon-emi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9.5L12 3l9 6.5v10.5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"></path>
+              <polyline points="9 21 9 12 15 12 15 21"></polyline>
+            </svg>
+          </div>
+          <h3 class="calc-title">EMI / Loan Calculator</h3>
+          <p class="calc-desc">Compute monthly repayments with full yearly &amp; monthly amortization schedules, dual-color principal vs. interest progress bars.</p>
+        </div>
+
+        <!-- 08: Loan Comparison -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">08</div>
+          <div class="calc-icon-wrap app-icon-compare">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="17 8 21 12 17 16"></polyline>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <polyline points="7 16 3 12 7 8"></polyline>
+            </svg>
+          </div>
+          <h3 class="calc-title">Loan Comparison</h3>
+          <p class="calc-desc">Compare 2 loan offers side-by-side — monthly EMI difference, total interest saved, and balance milestones at Year 1, 3, 5, 10.</p>
+        </div>
+
+        <!-- 09: Loan Prepayment -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">09</div>
+          <div class="calc-icon-wrap app-icon-prepay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.5 0 3-1.2 3-3 0-2.5-2.5-4-5-4-.5-1.5-1.5-3-3.5-3-2.5 0-4 1.5-4.5 3.5C8 7.5 6.5 9 6.5 11c0 2 1.5 3 2.5 3"></path>
+              <circle cx="15.5" cy="10" r="1" fill="currentColor"></circle>
+              <path d="M7 17l-1 4"></path>
+              <path d="M17 17l1 4"></path>
+              <path d="M9 17h6"></path>
+            </svg>
+          </div>
+          <h3 class="calc-title">Loan Prepayment</h3>
+          <p class="calc-desc">Simulate extra monthly payments, annual lump-sums, and step-up %. See exact years saved and interest cut from your loan tenure.</p>
+        </div>
+
+        <!-- 10: Flat vs Reducing -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">10</div>
+          <div class="calc-icon-wrap app-icon-flat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="5" x2="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3 class="calc-title">Flat vs Reducing</h3>
+          <p class="calc-desc">Unmask deceptive "flat rates" from car dealers. Converts quoted flat rate into the actual true reducing balance interest rate.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category 3: General Calculators -->
+    <div class="category-block stagger-children">
+      <div class="category-header">
+        <span class="category-dot" style="background:#059669;"></span>
+        <span class="category-name">General Calculators</span>
+        <span class="category-count">6 Tools</span>
+      </div>
+      <div class="calc-grid">
+        <!-- 11: SIP Calculator -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">11</div>
+          <div class="calc-icon-wrap app-icon-sip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+              <polyline points="16 7 22 7 22 13"></polyline>
+            </svg>
+          </div>
+          <h3 class="calc-title">SIP Calculator</h3>
+          <p class="calc-desc">Plan monthly mutual fund SIP investments and watch estimated wealth compound. Compare total invested vs total wealth gained.</p>
+        </div>
+
+        <!-- 12: ROI & Rule of 72 -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">12</div>
+          <div class="calc-icon-wrap app-icon-roi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="3" x2="12" y2="21"></line>
+              <path d="M3 8l9-5 9 5"></path>
+              <path d="M6 8l-3 6h6l-3-6z"></path>
+              <path d="M18 8l-3 6h6l-3-6z"></path>
+            </svg>
+          </div>
+          <h3 class="calc-title">ROI &amp; Rule of 72</h3>
+          <p class="calc-desc">Assess profitability, percentage gain/loss, annualized returns, and calculate exact years to double your wealth with Rule of 72.</p>
+        </div>
+
+        <!-- 13: GST Calculator -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">13</div>
+          <div class="calc-icon-wrap app-icon-gst">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16l3-1.5 3 1.5 3-1.5 3 1.5 3-1.5 3 1.5V4a2 2 0 0 0-2-2z"></path>
+              <line x1="8" y1="8" x2="16" y2="8"></line>
+              <line x1="8" y1="12" x2="14" y2="12"></line>
+            </svg>
+          </div>
+          <h3 class="calc-title">GST Calculator</h3>
+          <p class="calc-desc">Instant Exclusive &amp; Inclusive GST with 5%, 12%, 18%, 28% slabs. Clear CGST, SGST, and IGST breakdown output.</p>
+        </div>
+
+        <!-- 14: Discount Calculator -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">14</div>
+          <div class="calc-icon-wrap app-icon-discount">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+              <line x1="7" y1="7" x2="7.01" y2="7"></line>
+            </svg>
+          </div>
+          <h3 class="calc-title">Discount Calculator</h3>
+          <p class="calc-desc">Original price, % off, final price, and total savings. Supports dual stacked discounts for retail and online shopping deals.</p>
+        </div>
+
+        <!-- 15: Percentage Calculator -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">15</div>
+          <div class="calc-icon-wrap app-icon-percent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="5" x2="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3 class="calc-title">Percentage Calculator</h3>
+          <p class="calc-desc">4-in-1: What is X% of Y, X is what % of Y, Percentage Increase/Decrease, and Fraction-to-% conversions in one tool.</p>
+        </div>
+
+        <!-- 16: Tip & Bill Splitter -->
+        <div class="calc-card fade-in-up">
+          <div class="calc-number">16</div>
+          <div class="calc-icon-wrap app-icon-tip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <h3 class="calc-title">Tip &amp; Bill Splitter</h3>
+          <p class="calc-desc">Split dinner or travel expenses among friends with 5%, 10%, 15%, 20% tip presets and customizable group size.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =====================================================================
+     STANDOUT FEATURES SECTION
+     ===================================================================== -->
+<section id="features" class="features-section">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-tag">Why Finance Calculator?</span>
+      <h2 class="section-title">Built Different. Built Better.</h2>
+      <p class="section-subtitle">Professional financial tools previously only available on desktop — now in your pocket, offline, beautifully designed.</p>
+    </div>
+
+    <div class="features-grid stagger-children">
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon" style="background:rgba(37,99,235,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" width="26" height="26"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+        </div>
+        <h3 class="feature-title">Indian Number System</h3>
+        <p class="feature-desc">Results display as ₹1,00,000 — not the Western ₹100,000. Smart compact display: ₹12.5 L and ₹1.2 Cr for large values. Built for India.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon" style="background:rgba(5,150,105,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" width="26" height="26"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        </div>
+        <h3 class="feature-title">100% Offline &amp; Private</h3>
+        <p class="feature-desc">No login required. No cloud tracking. No ads. Everything runs entirely on your device — your financial data never leaves your phone.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon" style="background:rgba(124,58,237,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" width="26" height="26"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+        <h3 class="feature-title">1-Tap WhatsApp Share</h3>
+        <p class="feature-desc">Generate beautifully formatted text summaries — complete with loan breakdowns and results — share via WhatsApp, SMS, or Email instantly.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon" style="background:rgba(217,119,6,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" width="26" height="26"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+        </div>
+        <h3 class="feature-title">Calculation History</h3>
+        <p class="feature-desc">Automatically saves recent calculations with one-tap recall and instant re-calculation. Review yesterday's EMI quote in seconds.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon" style="background:rgba(239,68,68,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" width="26" height="26"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+        </div>
+        <h3 class="feature-title">PDF &amp; CSV Export</h3>
+        <p class="feature-desc">Generate clean, professional A4 PDF statements and Excel-compatible CSV amortization schedules directly from your phone. Share with banks or clients.</p>
+      </div>
+      <div class="feature-card fade-in-up">
+        <div class="feature-icon" style="background:rgba(16,185,129,0.12);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" width="26" height="26"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        </div>
+        <h3 class="feature-title">Instant Calculations</h3>
+        <p class="feature-desc">Results update in real-time as you type, with zero lag. Quick-tap rate preset chips (1.25%, 1.5%, 2%, 2.5%, 3%) for lightning-fast input.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     APP SCREENSHOTS SHOWCASE
+     ===================================================================== -->
+<section id="showcase" class="showcase-section">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-tag">App Screenshots</span>
+      <h2 class="section-title">See the App in Action</h2>
+      <p class="section-subtitle">Clean OLED dark theme, quick rate chips, exact calendar date pickers, and instant calculation history recall.</p>
+    </div>
+
+    <div class="screenshots-row stagger-children">
+
+      <!-- Screenshot 1: Simple Interest -->
+      <div class="screenshot-item fade-in-up">
+        <div class="screenshot-phone-frame">
+          <img src="assets/screenshots/simpleinterest_dark.jpeg"
+               data-dark-src="assets/screenshots/simpleinterest_dark.jpeg"
+               data-light-src="assets/screenshots/simpleinterest_light.jpeg"
+               alt="Simple Interest (Vaddi) calculator with date pickers and rate presets"
+               class="themed-img"
+               loading="lazy">
+        </div>
+        <div class="screenshot-caption">
+          <h4>Simple Interest (Vaddi)</h4>
+          <p>Exact date pickers · Rate presets · Monthly/Yearly toggle</p>
+        </div>
+      </div>
+
+      <!-- Screenshot 2: EMI Calculator -->
+      <div class="screenshot-item fade-in-up">
+        <div class="screenshot-phone-frame">
+          <img src="assets/screenshots/emi_dark.jpeg"
+               data-dark-src="assets/screenshots/emi_dark.jpeg"
+               data-light-src="assets/screenshots/emi_light.jpeg"
+               alt="EMI Loan Calculator with amortization schedule"
+               class="themed-img"
+               loading="lazy">
+        </div>
+        <div class="screenshot-caption">
+          <h4>EMI / Loan Calculator</h4>
+          <p>Amortization schedule · Principal vs Interest split</p>
+        </div>
+      </div>
+
+      <!-- Screenshot 3: Chit Calculator -->
+      <div class="screenshot-item fade-in-up">
+        <div class="screenshot-phone-frame">
+          <img src="assets/screenshots/chit_dark.jpeg"
+               data-dark-src="assets/screenshots/chit_dark.jpeg"
+               data-light-src="assets/screenshots/chit_light.jpeg"
+               alt="Chit Fund calculator with auction setup and calculation history"
+               class="themed-img"
+               loading="lazy">
+        </div>
+        <div class="screenshot-caption">
+          <h4>Chit Fund Calculator</h4>
+          <p>Auction setup · Agent commission · Member dividend</p>
+        </div>
+      </div>
+
+      <!-- Screenshot 4: Compound Interest -->
+      <div class="screenshot-item fade-in-up">
+        <div class="screenshot-phone-frame">
+          <img src="assets/screenshots/compound_dark.jpeg"
+               data-dark-src="assets/screenshots/compound_dark.jpeg"
+               data-light-src="assets/screenshots/compound_light.jpeg"
+               alt="Compound Interest calculator with compounding frequency selector"
+               class="themed-img"
+               loading="lazy">
+        </div>
+        <div class="screenshot-caption">
+          <h4>Compound Interest</h4>
+          <p>5 compounding frequencies · AER rate · Start &amp; End dates</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Download CTA under screenshots -->
+    <div class="showcase-cta fade-in-up">
+      <p>All 16 calculators, completely free. No ads. No internet needed.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+         class="play-badge-link" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play">
+        <img src="assets/google-play-badge.svg" alt="Get it on Google Play" class="play-badge-img">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     FAQ SECTION
+     ===================================================================== -->
+<section id="faq" class="faq-section">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-tag">Got Questions?</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know about Finance Calculator.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item fade-in-up">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is the Finance Calculator app completely free?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Yes — Finance Calculator is 100% free to download and use, forever. There are no in-app purchases, no subscriptions, no premium tiers, and absolutely <strong>no ads</strong>. All 16 calculators are fully unlocked the moment you install.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-in-up">
+        <button class="faq-question" aria-expanded="false">
+          <span>Does the app work without an internet connection?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. Finance Calculator works 100% offline. All calculations are performed locally on your device. You don't need Wi-Fi or mobile data for any feature — including calculation history, WhatsApp sharing, and PDF export.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-in-up">
+        <button class="faq-question" aria-expanded="false">
+          <span>How is interest calculated in the Simple Interest (Vaddi) tool?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer">
+          <p>The Simple Interest calculator uses the standard Indian lending (vaddi) method: <strong>Interest = Principal × Rate × Time</strong>. It applies the 30-day month / 360-day year convention used in informal lending. You can input rates as % per month or % per year, enter exact from-to calendar dates, and the daily accrual rate is also displayed.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-in-up">
+        <button class="faq-question" aria-expanded="false">
+          <span>What is the Flat vs. Reducing Rate calculator and why is it unique?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Many car dealers and retail lenders quote a "flat rate" of 6–8% which sounds attractive — but is calculated on the original principal for the entire tenure, making it far costlier. Our tool converts the quoted flat rate into the equivalent reducing balance rate, revealing the true cost. A "6% flat" loan often equals ~11–12% reducing — a massive hidden markup.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-in-up">
+        <button class="faq-question" aria-expanded="false">
+          <span>Does the app store or share my financial data?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Never. Finance Calculator has zero network access for your data. All calculation history is stored exclusively in your device's local storage. There are no analytics trackers, no external APIs, and no account creation required. Your financial information is completely private.</p>
+        </div>
+      </div>
+
+      <div class="faq-item fade-in-up">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can I share my calculation results with others?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! Every calculator has a 1-tap share button that generates a beautifully formatted text summary you can send via WhatsApp, SMS, or Email. For more formal use, you can also export official PDF reports and Excel-compatible CSV schedules directly from the app.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     DOWNLOAD CTA BANNER
+     ===================================================================== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner fade-in-up">
+      <span class="cta-tag">Get Started Today — It's Free</span>
+      <h2 class="cta-title">Ready to Make Smarter Financial Decisions?</h2>
+      <p class="cta-desc">Download Finance Calculator and keep 16 essential financial calculators at your fingertips — offline, always, with zero ads.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+         class="play-badge-link cta-badge" target="_blank" rel="noopener noreferrer" aria-label="Download Finance Calculator on Google Play">
+        <img src="assets/google-play-badge.svg" alt="Get it on Google Play" class="play-badge-img play-badge-large">
+      </a>
+      <p class="cta-sub">Free · No ads · Works offline · Android 6.0+</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================================
+     FOOTER
+     ===================================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand-col">
+        <div class="footer-logo-row">
+          <img src="assets/logo.png" alt="Finance Calculator Logo" class="footer-logo" width="32" height="32">
+          <span class="footer-brand-name">Finance Calculator</span>
+        </div>
+        <p class="footer-desc">16 essential financial calculators for Android. Simple, fast, and 100% offline.</p>
+        <p class="footer-desc" style="margin-top:6px;">By <strong>RR Production</strong> · Developed by Nikil Ravi</p>
+        <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+           class="footer-play-badge" target="_blank" rel="noopener noreferrer">
+          <img src="assets/google-play-badge.svg" alt="Get it on Google Play" height="48">
+        </a>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#calculators">16 Calculators</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#showcase">Screenshots</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Legal &amp; Policy</h4>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="disclaimer.html">Financial Disclaimer</a></li>
+          <li><a href="contact.html">Contact &amp; Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact</h4>
+        <p class="footer-desc">Support &amp; feedback:</p>
+        <p class="footer-desc" style="margin-top:6px;">
+          <a href="mailto:rrproduction.support@gmail.com" style="color:var(--color-primary);">
+            rrproduction.support@gmail.com
+          </a>
+        </p>
+        <p class="footer-desc" style="margin-top:10px;">Package ID:<br><code style="font-size:11px;color:var(--text-muted);">com.nikilravi.FINANCECalculator</code></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 RR Production. All rights reserved.</p>
+      <p>Calculations are for informational purposes only and do not constitute financial advice. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

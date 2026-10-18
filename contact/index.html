@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contact Us & Support – Finance Calculator | RR Production</title>
+  <meta name="title" content="Contact Us & Support – Finance Calculator | RR Production">
+  <meta name="description" content="Contact RR Production for Finance Calculator support, bug reports, and feature feedback. We are here to help.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#121214">
+
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="apple-touch-icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script>
+    (function() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand" aria-label="Finance Calculator by RR Production">
+        <div class="brand-icon" title="Finance Calculator Logo">
+          <img src="../assets/logo.png" alt="Finance Calculator Logo" width="36" height="36">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Finance Calculator</span>
+          <span class="brand-subtitle">RR Production</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="../index.html#home" class="nav-link">Home</a></li>
+          <li><a href="../index.html#features" class="nav-link">Features</a></li>
+          <li><a href="../index.html#about" class="nav-link">About</a></li>
+          <li><a href="../index.html#support" class="nav-link">Support</a></li>
+          <li><a href="../privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Light / Dark Mode Toggle Button -->
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator" class="btn btn-playstore" target="_blank" rel="noopener noreferrer">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a2.31 2.31 0 0 1-.22-.984V2.798c0-.368.08-.71.22-.984zm11.24 11.24l2.128 2.128-11.83 6.76 9.702-8.888zm0-2.108L5.147 2.058l11.83 6.76-2.128 2.128zm1.465 1.054l3.076 1.758a1.282 1.282 0 0 1 0 2.228l-3.076 1.758-2.22-2.22 2.22-1.524z"/>
+          </svg>
+          <span>Get on Google Play</span>
+        </a>
+
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNav">
+          <svg class="hamburger-icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--border-color);">
+        <span style="font-size: 0.875rem; font-weight: 700; color: var(--text-main);">Theme Mode</span>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+      <a href="../index.html#home" class="mobile-nav-link">Home</a>
+      <a href="../index.html#features" class="mobile-nav-link">Features</a>
+      <a href="../index.html#about" class="mobile-nav-link">About</a>
+      <a href="../index.html#support" class="mobile-nav-link">Support</a>
+      <a href="../privacy-policy.html" class="mobile-nav-link">Privacy Policy</a>
+      <a href="index.html" class="mobile-nav-link active">Contact Us</a>
+      <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="margin-top: 8px;">
+        Get it on Google Play
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="../index.html">Home</a>
+          <span>&rsaquo;</span>
+          <span>Contact Us</span>
+        </div>
+        <h1 class="page-title">Contact Us & Support</h1>
+        <p class="page-meta">We welcome user questions, feedback, and issue reports.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Column: Support Channel & App Info -->
+          <div>
+            <div class="contact-card">
+              <h2>Direct Support Channel</h2>
+              <p>
+                For any inquiries regarding Finance Calculator, please reach out directly via email. Our team aims to review and respond to inquiries as quickly as possible.
+              </p>
+
+              <div class="support-email-box" style="margin-bottom: 24px; width: 100%; justify-content: space-between;">
+                <div>
+                  <div class="support-email-label">Support Email Address</div>
+                  <div class="support-email-val">rrproduction.support@gmail.com</div>
+                </div>
+                <button type="button" class="btn-copy" data-email="rrproduction.support@gmail.com" title="Copy Email Address" aria-label="Copy support email address">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <a href="mailto:rrproduction.support@gmail.com?subject=Finance%20Calculator%20Inquiry" class="btn btn-primary">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Compose Email</span>
+                </a>
+              </div>
+
+              <!-- Application Details Box -->
+              <div class="app-meta-box">
+                <div class="meta-row">
+                  <span class="meta-lbl">App Name</span>
+                  <span class="meta-val">Finance Calculator</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-lbl">Developer / Brand</span>
+                  <span class="meta-val">RR Production</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-lbl">Platform</span>
+                  <span class="meta-val">Android (Google Play)</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-lbl">Category</span>
+                  <span class="meta-val">Finance & Utilities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Instructions -->
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <!-- Bug Reporting Instructions -->
+            <div class="contact-card">
+              <h2>Reporting an Issue or Bug</h2>
+              <p>
+                Encountered a problem or incorrect calculation? Please include the following details in your email to help us diagnose and fix it quickly:
+              </p>
+              <ul class="instruction-list">
+                <li class="instruction-item">
+                  <div class="instruction-num">1</div>
+                  <div class="instruction-content">
+                    <strong>Device Information</strong>
+                    <span>Your device model (e.g., Pixel 7, Galaxy S23) and Android OS version.</span>
+                  </div>
+                </li>
+                <li class="instruction-item">
+                  <div class="instruction-num">2</div>
+                  <div class="instruction-content">
+                    <strong>Calculator Used</strong>
+                    <span>Specify whether the issue occurred in Simple Interest, Compound Interest, EMI, GST, Chit, or Prepayment.</span>
+                  </div>
+                </li>
+                <li class="instruction-item">
+                  <div class="instruction-num">3</div>
+                  <div class="instruction-content">
+                    <strong>Inputs & Expected Result</strong>
+                    <span>Share the specific numbers entered, what result you observed, and what was expected.</span>
+                  </div>
+                </li>
+                <li class="instruction-item">
+                  <div class="instruction-num">4</div>
+                  <div class="instruction-content">
+                    <strong>Screenshots (Optional)</strong>
+                    <span>Attaching a screenshot helps us resolve issues much faster.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Feedback Instructions -->
+            <div class="contact-card">
+              <h2>Sharing General Feedback</h2>
+              <p>
+                We appreciate ideas that make everyday calculations simpler and more accessible.
+              </p>
+              <ul class="instruction-list">
+                <li class="instruction-item">
+                  <div class="instruction-num">&#10003;</div>
+                  <div class="instruction-content">
+                    <strong>Feature Suggestions</strong>
+                    <span>Let us know if there are specific calculation formats or input options that would improve your workflow.</span>
+                  </div>
+                </li>
+                <li class="instruction-item">
+                  <div class="instruction-num">&#10003;</div>
+                  <div class="instruction-content">
+                    <strong>UI & Readability Suggestions</strong>
+                    <span>Tell us how we can make figures and breakdowns even clearer to read.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="../assets/logo.png" alt="₹" class="footer-logo" width="26" height="26">
+            <span class="footer-brand-title">Finance Calculator</span>
+          </div>
+          <span class="footer-brand-by">By RR Production</span>
+          <p class="footer-brand-desc">
+            Simple, accurate financial calculations for everyday users on Android.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#features">Features</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#support">Support</a></li>
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Download</h4>
+          <p style="font-size: 0.875rem; margin-bottom: 16px; color: #94A3B8;">
+            Install the free Android app from the Google Play Store.
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator" class="btn btn-playstore" target="_blank" rel="noopener noreferrer">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3.609 1.814L13.792 12 3.61 22.186a2.31 2.31 0 0 1-.22-.984V2.798c0-.368.08-.71.22-.984zm11.24 11.24l2.128 2.128-11.83 6.76 9.702-8.888zm0-2.108L5.147 2.058l11.83 6.76-2.128 2.128zm1.465 1.054l3.076 1.758a1.282 1.282 0 0 1 0 2.228l-3.076 1.758-2.22-2.22 2.22-1.524z"/>
+            </svg>
+            <span>Google Play</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 RR Production. All rights reserved.</p>
+        <p style="color: #64748B; font-size: 0.8125rem;">
+          Google Play and the Google Play logo are trademarks of Google LLC.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

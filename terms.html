@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Terms &amp; Conditions – Finance Calculator | RR Production</title>
+  <meta name="title" content="Terms &amp; Conditions – Finance Calculator | RR Production">
+  <meta name="description" content="Terms and Conditions governing the use of Finance Calculator Android application and website developed by RR Production.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0B0F19">
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/screenshot-showcase.css">
+
+  <!-- Prevent FOUC -->
+  <script>
+    (function() {
+      const s = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', (s === 'light' || s === 'dark') ? s : 'dark');
+    })();
+  </script>
+</head>
+<body>
+
+<!-- =====================================================================
+     STICKY NAVIGATION BAR
+     ===================================================================== -->
+<header class="navbar" role="banner">
+  <div class="nav-container container">
+
+    <!-- Brand -->
+    <a href="index.html" class="brand" aria-label="Finance Calculator by RR Production">
+      <img src="assets/logo.png" alt="Finance Calculator Logo" class="brand-logo" width="36" height="36">
+      <div class="brand-text">
+        <span class="brand-title">Finance Calculator</span>
+        <span class="brand-subtitle">by RR Production</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav aria-label="Primary Navigation">
+      <ul class="nav-menu">
+        <li><a href="index.html#calculators" class="nav-link">Calculators</a></li>
+        <li><a href="index.html#features"    class="nav-link">Features</a></li>
+        <li><a href="index.html#showcase"    class="nav-link">Screenshots</a></li>
+        <li><a href="index.html#faq"         class="nav-link">FAQ</a></li>
+        <li><a href="terms.html"             class="nav-link active">Terms</a></li>
+      </ul>
+    </nav>
+
+    <!-- Actions -->
+    <div class="nav-actions">
+      <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+         class="btn-download-nav" target="_blank" rel="noopener noreferrer" aria-label="Get on Google Play">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3.609 1.814L13.792 12 3.61 22.186a2.31 2.31 0 0 1-.22-.984V2.798c0-.368.08-.71.22-.984zm11.24 11.24l2.128 2.128-11.83 6.76 9.702-8.888zm0-2.108L5.147 2.058l11.83 6.76-2.128 2.128zm1.465 1.054l3.076 1.758a1.282 1.282 0 0 1 0 2.228l-3.076 1.758-2.22-2.22 2.22-1.524z"/>
+        </svg>
+        Download Free
+      </a>
+
+      <!-- Hamburger -->
+      <button id="hamburgerBtn" class="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true">
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileNav" class="mobile-nav" role="navigation" aria-label="Mobile Navigation">
+    <div class="mobile-nav-inner">
+      <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Theme Mode</span>
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+      <a href="index.html#calculators"  class="mobile-nav-link">Calculators</a>
+      <a href="index.html#features"     class="mobile-nav-link">Features</a>
+      <a href="index.html#showcase"     class="mobile-nav-link">Screenshots</a>
+      <a href="index.html#faq"          class="mobile-nav-link">FAQ</a>
+      <a href="privacy-policy.html"     class="mobile-nav-link">Privacy Policy</a>
+      <a href="terms.html"              class="mobile-nav-link active">Terms &amp; Conditions</a>
+      <a href="disclaimer.html"         class="mobile-nav-link">Disclaimer</a>
+      <a href="contact.html"            class="mobile-nav-link">Contact Us</a>
+      <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+         class="btn-primary mobile-cta" target="_blank" rel="noopener noreferrer">
+        Get on Google Play
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Page Header -->
+  <div class="inner-page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Terms &amp; Conditions</span>
+      </div>
+      <h1 class="inner-page-title">Terms &amp; Conditions</h1>
+      <p class="inner-page-meta">Last updated: October 18, 2026 &bull; App: Finance Calculator &bull; Developer: RR Production</p>
+    </div>
+  </div>
+
+  <!-- Content Wrap -->
+  <div class="legal-content-wrap">
+    <div class="container">
+      <article class="legal-article">
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By downloading, installing, accessing, or using the <strong>Finance Calculator</strong> mobile application or this website, you agree to be bound by these Terms &amp; Conditions. If you do not agree with any part of these terms, please do not use the application or services.
+        </p>
+
+        <h2>2. Permitted Use &amp; License</h2>
+        <p>
+          RR Production grants you a personal, non-exclusive, non-transferable, revocable license to use Finance Calculator for personal, educational, or lawful business utility purposes on compatible mobile devices.
+        </p>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Reverse-engineer, decompile, or disassemble any part of the App software.</li>
+          <li>Resell, redistribute, rent, or lease the App without prior written consent.</li>
+          <li>Use the App for fraudulent, unlawful, or unauthorized financial activities.</li>
+          <li>Circumvent or tamper with application security mechanisms or local database integrity.</li>
+        </ul>
+
+        <h2>3. Informational &amp; Calculation Accuracy</h2>
+        <div class="legal-highlight">
+          <p><strong>Notice:</strong> Finance Calculator is provided as an estimation utility. Calculations are generated based on mathematical formulas (e.g., standard amortization, compound frequency formulas, 30-day month / 360-day year conventions, Indian chit auction rules). Results are illustrative estimates and do not constitute certified financial calculations, bank quotes, or formal accounting records.</p>
+        </div>
+        <p>
+          Actual loan EMIs, interest debits, deposit maturities, or chit disbursements calculated by banks, non-banking financial companies (NBFCs), chit fund foremen, or government bodies may vary due to differing day-count conventions (actual/365 vs 30/360), compounding cut-off timings, leap years, administrative fees, stamp duties, or applicable taxes.
+        </p>
+
+        <h2>4. No Financial, Legal, or Tax Advice</h2>
+        <p>
+          The content, results, schedules, tables, and estimates generated by Finance Calculator do not constitute legal, tax, investment, loan, or certified financial advice. You are solely responsible for verifying figures with certified financial advisors, qualified accountants, or official bank statements prior to entering loan agreements or investment commitments.
+        </p>
+
+        <h2>5. Offline Execution &amp; Data Ownership</h2>
+        <p>
+          Finance Calculator executes 100% locally on your device. We do not store, back up, or retain copies of your entries or calculation history on remote servers. As a result, you are solely responsible for exporting or recording results (via WhatsApp share, PDF, or CSV export) that you wish to retain. RR Production has no ability to recover lost local data if you uninstall the App or clear device data.
+        </p>
+
+        <h2>6. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by applicable law, RR Production, its developers, affiliates, and licensors shall not be held liable for any direct, indirect, incidental, consequential, special, or exemplary damages, including but not limited to financial losses, loss of profit, erroneous loan contracts, missed tax filing deadlines, or penalties incurred from reliance on figures produced by the App.
+        </p>
+
+        <h2>7. Intellectual Property</h2>
+        <p>
+          All trademarks, icons, layout designs, brand assets, source code, and intellectual property rights related to Finance Calculator and RR Production belong exclusively to Nikil Ravi / RR Production. Google Play and the Google Play logo are trademarks of Google LLC.
+        </p>
+
+        <h2>8. Changes to Terms</h2>
+        <p>
+          We reserve the right to modify or update these Terms &amp; Conditions at any time. Any changes will be posted on this page with an updated revision date. Continued usage of the App or website constitutes acceptance of the amended terms.
+        </p>
+
+        <h2>9. Contact Information</h2>
+        <p>
+          If you have questions regarding these Terms &amp; Conditions, please contact us:
+        </p>
+        <div class="legal-email-row">
+          <span class="legal-email-label">Support Email</span>
+          <span class="legal-email-val">rrproduction.support@gmail.com</span>
+          <button type="button" class="btn-copy" data-email="rrproduction.support@gmail.com" title="Copy email" aria-label="Copy support email address">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+</main>
+
+<!-- =====================================================================
+     FOOTER
+     ===================================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand-col">
+        <div class="footer-logo-row">
+          <img src="assets/logo.png" alt="Finance Calculator Logo" class="footer-logo" width="32" height="32">
+          <span class="footer-brand-name">Finance Calculator</span>
+        </div>
+        <p class="footer-desc">16 essential financial calculators for Android. Simple, fast, and 100% offline.</p>
+        <p class="footer-desc" style="margin-top:6px;">By <strong>RR Production</strong> · Developed by Nikil Ravi</p>
+        <a href="https://play.google.com/store/apps/details?id=com.nikilravi.FINANCECalculator"
+           class="footer-play-badge" target="_blank" rel="noopener noreferrer">
+          <img src="assets/google-play-badge.svg" alt="Get it on Google Play" height="44">
+        </a>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#calculators">16 Calculators</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#showcase">Screenshots</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Legal &amp; Policy</h4>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="disclaimer.html">Financial Disclaimer</a></li>
+          <li><a href="contact.html">Contact &amp; Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Contact</h4>
+        <p class="footer-desc">Support &amp; feedback:</p>
+        <p class="footer-desc" style="margin-top:6px;">
+          <a href="mailto:rrproduction.support@gmail.com" style="color:var(--color-primary);">
+            rrproduction.support@gmail.com
+          </a>
+        </p>
+        <p class="footer-desc" style="margin-top:10px;">Package ID:<br><code style="font-size:11px;color:var(--text-muted);">com.nikilravi.FINANCECalculator</code></p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 RR Production. All rights reserved.</p>
+      <p>Calculations are for informational purposes only and do not constitute financial advice. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
